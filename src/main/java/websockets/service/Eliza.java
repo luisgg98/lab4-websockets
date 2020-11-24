@@ -24,6 +24,7 @@ public class Eliza {
     responses = new HashMap<>();
     String[] temp0 = {"What does that suggest to you?", "I see.", "I'm not sure I understand you fully.",
             "Can you elaborate?", "That is quite interesting."};
+    // That's what it says when it do not want to say
     responses.put("NOTFOUND", temp0);
 
     String[] temp1 = {"Can you think of a specific example?"};
@@ -41,6 +42,7 @@ public class Eliza {
     String[] temp5 = {"Do you really think so?"};
     responses.put("i think", temp5);
 
+    // It thinks i am talking about it
     String[] temp6 = {"We were discussing you, not me."};
     responses.put("you", temp6);
 
@@ -54,7 +56,7 @@ public class Eliza {
             "Do you believe it is normal to be *?", "Do you enjoy being *?"};
     responses.put("i am", temp9);
     responses.put("i'm", temp9);
-
+    //That what it answers when I tell it how i feel
     String[] temp10 = {"Tell me more about such feelings.", "Do you often feel *?", "Do you enjoy feeling *?",
             "Why do you feel that way?"};
     responses.put("i feel", temp10);
